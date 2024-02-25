@@ -27,16 +27,16 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
        #Устанавливаем зависимости
-#      - name: Install dependencies
-#        run: npm install -f
+      - name: Install dependencies
+        run: npm install -f
 
 #      # Запускаем тесты и линтер
 #      - name: Run tests and linter
 #        run: npm run lint && npm test
 
        #Собираем приложение
-#      - name: Build Application
-#        run: npm run build
+      - name: Build Application
+        run: npm run build
 
       # Публикуем приложение на Github Pages
       - name: Deploy to Github Pages
