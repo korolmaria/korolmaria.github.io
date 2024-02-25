@@ -3,7 +3,7 @@
 .main {
 	&_content {
 		display: flex;
-		justify-content: start;
+		justify-content: flex-start;
 		min-height: calc(100vh - 24px);
 		background: $bg-main;
 	}
