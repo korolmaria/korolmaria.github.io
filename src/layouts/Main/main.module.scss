@@ -1,0 +1,10 @@
+@import 'src/assets/styles/variables';
+
+.main {
+	&_content {
+		display: flex;
+		justify-content: start;
+		min-height: calc(100vh - 24px);
+		background: $bg-main;
+	}
+}

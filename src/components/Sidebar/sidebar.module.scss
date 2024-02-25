@@ -1,0 +1,42 @@
+@import 'src/assets/styles/variables';
+
+.sidebar {
+	position: relative;
+	width: 30%;
+	max-width: 300px;
+	padding: 24px;
+	color: $color-white;
+	background: $color-blue-dark;
+	transform: translateX(0);
+	opacity: 1;
+	transition: all 0.5s ease;
+
+	&_actions {
+		position: absolute;
+		top: 6px;
+		right: 6px;
+		cursor: pointer;
+
+		&:hover svg {
+			transform: scale(1.2);
+			transition: all 0.3s linear;
+
+			path {
+				fill: $color-blue-light;
+			}
+		}
+	}
+
+	&_close {
+		width: 126px;
+		transform: translateX(-100px);
+	}
+
+	&_content {
+		display: block;
+
+		&__close {
+			display: none;
+		}
+	}
+}

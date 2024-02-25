@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-order-config-standard",
+    "stylelint-config-standard-scss",
+    "stylelint-config-prettier-scss",
+    "stylelint-config-rational-order"
+  ],
+
+  "plugins": ["stylelint-order",
+    "stylelint-config-rational-order/plugin"
+  ],
+
+  "rules": {
+    "declaration-empty-line-before": "never",
+    "selector-class-pattern": null,
+    "scss/no-global-function-names": null,
+    "no-descending-specificity": null,
+    "scss/at-extend-no-missing-placeholder": null
+  }
+}

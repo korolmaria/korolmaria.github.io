@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  frontend:
+    container_name: Neftehim
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - './:/app'
+      - '/app/node_modules'
+    ports:
+      - "443:443"
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+
