@@ -26,23 +26,23 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # Устанавливаем зависимости
-#      - name: Install dependencies
-#        run: npm install -f
+       Устанавливаем зависимости
+      - name: Install dependencies
+        run: npm install -f
 
 #      # Запускаем тесты и линтер
 #      - name: Run tests and linter
 #        run: npm run lint && npm test
 
-      # Собираем приложение
-#      - name: Build Application
-#        run: npm run build
+       #Собираем приложение
+      - name: Build Application
+        run: npm run build
 
       # Публикуем приложение на Github Pages
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@4.2.1
         with:
-          branch: main
+          branch: gh-pages
           folder: build
 
 #      # Собираем Storybook
