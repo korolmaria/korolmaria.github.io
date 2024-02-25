@@ -1,0 +1,45 @@
+@import 'assets/styles/variables';
+
+.button {
+	display: flex;
+	transition: all 0.8s ease;
+
+	&_text {
+		color: $color-blue;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 20px;
+	}
+
+	&_arrow {
+		margin-left: 10px;
+		transition: all 0.8s ease;
+
+		&__opened svg {
+			transform: rotate(180deg);
+		}
+	}
+
+	&:hover {
+		svg > path {
+			fill: $color-gray-light;
+		}
+	}
+
+	&:hover &_text {
+		color: $color-gray-light;
+	}
+}
+
+.list {
+	margin: 10px 20px;
+
+	&_item {
+		cursor: pointer;
+		transition: color 0.3s ease;
+
+		&:hover {
+			color: $color-gray;
+		}
+	}
+}

@@ -4,7 +4,7 @@
 	position: relative;
 	width: 30%;
 	max-width: 300px;
-	padding: 24px;
+	padding: 30px 24px;
 	color: $color-white;
 	background: $color-blue-dark;
 	transform: translateX(0);
@@ -13,8 +13,8 @@
 
 	&_actions {
 		position: absolute;
-		top: 6px;
-		right: 6px;
+		top: 12px;
+		right: 12px;
 		cursor: pointer;
 
 		&:hover svg {
@@ -28,15 +28,11 @@
 	}
 
 	&_close {
-		width: 126px;
+		width: 140px;
 		transform: translateX(-100px);
 	}
 
 	&_content {
-		display: block;
-
-		&__close {
-			display: none;
-		}
+		transition: transform 0.5s ease, opacity 0.7s ease;
 	}
 }
