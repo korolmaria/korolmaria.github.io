@@ -5,7 +5,7 @@
 	transition: all 0.5s ease;
 
 	&:hover {
-		box-shadow: $box-shadow-image;
+		box-shadow: $box-shadow-header;
 		transform: scale(1.05);
 	}
 }
