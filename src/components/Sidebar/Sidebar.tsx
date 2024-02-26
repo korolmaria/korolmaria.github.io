@@ -29,7 +29,7 @@ export const Sidebar = () => {
 		if (opened) {
 			setIsVisible(true);
 
-			setTimeout(() => setTransition(true), 500);
+			setTimeout(() => setTransition(true));
 		}
 
 		if (!opened) setTransition(false);

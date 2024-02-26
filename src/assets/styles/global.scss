@@ -10,6 +10,11 @@ body {
 	scroll-behavior: smooth;
 }
 
+img {
+	width: 100%;
+	object-fit: contain;
+}
+
 h1 {
 	margin: 0;
 }
